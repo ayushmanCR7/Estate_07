@@ -1,0 +1,59 @@
+.profile{
+    display: flex;
+
+    .left{
+        display: flex;      
+        justify-content: center;
+        align-items: center;
+      flex: 3;
+      height: 80vh;
+      
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 50%;
+        h1{
+            font-size: 25px;
+        }
+       
+        .item{            
+           display: flex;
+           justify-content: start;
+           flex-direction: column;          
+           gap: 5px;
+           label{
+        font-weight: bold;
+           }
+           input{
+            padding: 5px;
+           }
+           
+        }
+        button{
+            padding: 5px;
+            background-color: aqua;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            
+           }
+      }
+    }
+    .right{
+        height: 90vh;
+     width: 330px;
+     background-color: antiquewhite;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 4px;
+     img{
+        width: 70%;
+        height: 50%;
+     }
+
+    }
+}

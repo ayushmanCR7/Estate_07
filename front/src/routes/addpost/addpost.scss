@@ -1,0 +1,91 @@
+.post {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    
+    .left {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+        padding-right: 10px;
+        h1 {
+            font-size: 25px;
+        }
+
+        form {
+             height: 80vh;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            display: flex;
+            overflow-y: scroll;
+            gap: 20px;
+            align-items: center;
+            scrollbar-width: none;
+            padding-bottom: 10px;
+            position: relative;
+            .item {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                input{
+                    padding: 10px;
+                    
+                }
+                select{
+                    padding: 10px;
+                 
+                }
+            }
+            .item_desc{
+                display: flex;
+                flex-direction: column;
+                flex: 3;
+                .q{
+                    width: 660px;
+                    height: 180px;
+                    padding-bottom: 30px;
+                }
+            }
+            button{
+                padding: 20px;
+                width: 30%;
+                cursor: pointer;
+                background-color: rgb(127, 180, 180);
+                border-radius: 10px;
+                border: none;
+                position: absolute;
+
+                top: 615px;
+                left: 233px;
+                
+                
+            }
+        }
+
+
+    }
+
+    .image{
+        height: 90vh;
+     width: 330px;
+     background-color: antiquewhite;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 6px;
+     overflow-y: scroll;
+     scrollbar-width: none;
+     padding-bottom: 40px;
+     img{
+        width: 50%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 5px;
+       
+
+     }
+
+    }
+}

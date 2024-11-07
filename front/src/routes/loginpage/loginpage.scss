@@ -1,0 +1,53 @@
+.login{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .left{
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .log{         
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                h1{
+                    font-size: 20px;
+                }
+                input{
+                    padding: 5px;
+                }
+                
+                button{
+                    padding: 5px;
+                    background-color: rgb(70, 217, 70);
+                    border-radius: 10px;
+                    width: 100%;
+                }
+                
+            }
+        }
+    }
+.right{
+    .imagecontainer{ 
+        flex-basis: 330px; // Try using flex-basis for width.
+        width: 330px;  
+        height: 100%;
+        background-color: antiquewhite;
+        position: relative;
+        display: flex;
+        align-items: center;
+        img{
+          width: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: antiquewhite;
+        }
+      }
+}
+}

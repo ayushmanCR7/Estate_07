@@ -1,0 +1,141 @@
+@import "../../responsive.scss";
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    a{
+        transition: all 0.4s ease;
+         @include sm{
+            display: none;
+         }
+        &:hover{
+            scale: 1.05;
+        }
+    }
+    .logo{
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        span{
+            @include medium{
+                display: none;
+             }
+             @include sm{
+                display: initial;
+             }
+        }
+    }
+    .left{
+        display: flex;
+        gap: 55px;
+        align-items: center;
+       }
+       .right{
+      
+        padding-left: 12%;
+         width: 330px;
+         gap: 30px;
+           display: flex;
+           align-items: center;
+           background-color: antiquewhite;
+           height: 100px;
+           
+           .menuIcon{
+           
+            display: none;
+            z-index: 999;
+           
+            cursor: pointer;
+
+            @include sm{
+                display: initial;
+                padding-left: 273px;
+            }
+           }
+           @include medium{
+            background-color: transparent;
+        }
+        .user{
+           
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            padding-right: 20px;
+           
+            font-size: 13px;
+            gap: 8px;
+           span{
+            width: max-content;
+           }
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+               
+            }
+            .profile{
+                padding: 10px 10px;
+                background-color: yellow;
+                border-radius: 20%;
+                cursor: pointer;
+                border: none;
+                position: relative;
+                .notification{
+                    border-radius: 80%;
+                    width: 10px;
+                    height: 10px;
+                    padding: 8px;
+                    top: -4px;
+                    right: -4px;
+                    background-color: red;
+                    color: white;
+                    position: absolute;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                }
+            }
+        }
+        .register{
+            background-color: yellow;
+            padding: 9px;
+            border-radius: 9px;
+            color: black;
+            display: flex;
+            height: 7vh;
+           }
+        .menu{
+            top:0;
+            position: absolute;
+            right: -50%;
+            background-color: rgb(5, 0, 0);
+            color: white;
+            height: 100vh;
+            width: 50%;
+            transition: all 1s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            gap: 10px;
+            &.active{
+                right: 0;
+            }
+           @include sm{
+            a{
+                display: initial;
+                
+            }
+           }
+           }
+       }
+      
+       
+       
+       
+}

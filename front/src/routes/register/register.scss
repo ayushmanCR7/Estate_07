@@ -1,0 +1,61 @@
+.register{
+    display: flex;
+    height: 90vh;
+ 
+    .left{
+        flex: 1;
+        
+        padding-left: 85px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        height: 100%;
+        .fromcontainer{
+        
+            padding: 10px;
+            width: max-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            form{
+               
+          display: flex;
+          flex-direction: column;
+         
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          button{
+            background-color:yellow;
+            border: none;
+            cursor: pointer;
+            padding: 9px;
+            border-radius: 10px;
+          }
+          input{
+            border: none;
+            padding: 15px;
+            background-color: yellow;
+            border-radius: 10px;
+            color: black;
+          }
+            }
+        }
+            
+    }
+    .right{ 
+        flex-basis: 330px; // Try using flex-basis for width.
+        width: 330px;  
+        background-color: antiquewhite;
+        position: relative;
+        display: flex;
+        align-items: center;
+        img{
+          width: 105%;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+}

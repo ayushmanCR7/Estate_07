@@ -1,0 +1,279 @@
+.singlepage {
+    display: flex;
+    height: 100%;
+
+    .details {
+        overflow-y: scroll;
+        scrollbar-width: none;
+        height: calc(100vh - 100px);
+        padding-bottom: 10px;
+        flex: 3;
+
+        .wrapper {
+            padding-right: 40px;
+
+            .info {
+                margin-top: 50px;
+
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .post {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+
+                        .adress {
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+
+                            img {
+                                width: 25px;
+                            }
+                        }
+                    }
+
+                    .price {
+                        font-weight: bold;
+                        background-color: yellow;
+                        width: max-content;
+                        border-radius: 5px;
+                        font-size: 13px;
+                        padding: 6px;
+                    }
+
+                    .user {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: yellow;
+                        gap: 10px;
+                        padding: 15px 42px 0px 42px;
+                        border-radius: 23px;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                .bottom {
+                    margin-top: 50px;
+                    font-size: 13px;
+                    padding-bottom: 20px;
+
+                }
+            }
+
+        }
+
+    }
+
+    .features {
+        padding-bottom: 10px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        height: calc(100vh - 80px);
+
+        width: 330px;
+        background-color: antiquewhite;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 16px;
+            gap: 10px;
+
+            .general {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .gen {
+                    border-radius: 7px;
+                    background-color: white;
+                    padding: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+
+                    .i {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+
+                        .u {
+                            font-size: 13px;
+                            font-weight: bold;
+
+                            .in {
+                                font-size: 10px;
+                            }
+                        }
+
+                        .uimg {
+                            img {
+                                width: 23px;
+                            }
+                        }
+                    }
+
+                }
+
+                h1 {
+                    font-size: 18px;
+                }
+            }
+
+            .roomsizes {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                h1 {
+                    font-size: 18px;
+                }
+
+                .room {
+                    display: flex;
+                    gap: 5px;
+                    justify-content: space-between;
+
+                    .si {
+                        background-color: white;
+                        justify-content: center;
+                        padding: 5px;
+                        display: flex;
+                        font-size: 12px;
+                        align-items: center;
+                        gap: 3px;
+                        border-radius: 10px;
+
+                        img {
+                            width: 18px;
+                        }
+                    }
+
+                    .bed {
+                        background-color: white;
+                        padding: 5px;
+                        display: flex;
+                        font-size: 12px;
+                        align-items: center;
+                        border-radius: 10px;
+                        gap: 3px;
+
+                        img {
+                            width: 18px;
+                        }
+                    }
+
+                    .bath {
+                        background-color: white;
+                        padding: 5px;
+                        display: flex;
+                        font-size: 12px;
+                        align-items: center;
+                        border-radius: 10px;
+                        gap: 3px;
+
+                        img {
+                            width: 18px;
+                        }
+                    }
+
+                }
+            }
+
+            .nearbyplaces {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                h1 {
+                    font-size: 18px;
+                }
+                .near {
+                    display: flex;
+                   
+                    justify-content: space-between;
+
+                    .si {
+                        background-color: white;
+                        justify-content: center;
+                        padding: 5px;
+                        display: flex;
+                        font-size: 10px;
+                        align-items: center;
+                        gap: 3px;
+                        border-radius: 10px;
+
+                        img {
+                            width: 18px;
+                        }
+                    }
+
+                    .bed {
+                        background-color: white;
+                        padding: 5px;
+                        display: flex;
+                        font-size: 10px;
+                        align-items: center;
+                        border-radius: 10px;
+                        gap: 3px;
+                      img {
+                            width: 18px;
+                        }
+                    }
+
+                    .bath {
+                        background-color: white;
+                        padding: 5px;
+                        display: flex;
+                        font-size: 10px;
+                        align-items: center;
+                        border-radius: 10px;
+                        gap: 3px;
+                    img {
+                            width: 18px;
+                        }
+                    }
+                }
+            }
+            .location{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                
+                h1{
+                    font-size: 20px;
+                }
+                
+                .last{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+                    button{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 6px;
+                        cursor: pointer;
+                        padding: 4px;
+                        background-color: white;
+                        border: none;
+                        border-radius: 25px;
+                        img{
+                            width: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
